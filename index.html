@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Temperature Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Scanner</h1>
+        <form id="temperatureForm">
+            <label for="temperature"> Your Temperature (°C):</label>
+            <input type="text" id="temperature" name="temperature" placeholder="e.g., 36.5">
+            <span id="error" class="error-message"></span>
+            <div class="button-container">
+                <button type="submit" id="submitButton" class="button">Analyze</button>
+                <button type="button" id="clearButton" class="button">Clear</button>
+            </div>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
